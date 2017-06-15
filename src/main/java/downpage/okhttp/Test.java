@@ -20,7 +20,7 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		String[] keywords = new String[] { "¾ØÕó", "æêÁúÔ°", "Áúìû", "ÌïÔ°·ç¹â","ºÍĞ³","ÈğÑ©´ºÌÃ","ºèË³Ô°" };
+		String[] keywords = new String[] { "¾ØÕó", "æêÁúÔ°", "Áúìû", "ÌïÔ°·ç¹â","ºÍĞ³","ÈğÑ©´ºÌÃ","ºèË³Ô°","ÁúÔ¾","ÁúÌÚ","Áú½õ" };
 		for(String kw : keywords)
 		{
 			try {
