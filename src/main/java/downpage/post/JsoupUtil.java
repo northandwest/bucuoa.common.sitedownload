@@ -34,6 +34,20 @@ public class JsoupUtil {
 		return doc.toString(); 
 	}
 	
+	public static String httpRestGet(String url) throws IOException{
+		//获取请求连接
+		Connection con = Jsoup.connect(url);
+		//请求头设置，特别是cookie设置 text/*, application/xml, or application/xhtml+xml. Mimetype=application/json
+		con.header("Accept", "text/html, application/xhtml+xml, */*"); 
+		con.header("Content-Type", "application/xml");
+		con.header("User-Agent", "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0))"); 
+		con.header("Mimetype", "application/json");
+		//解析请求结果
+		Document doc=con.ignoreContentType(true).get(); 
+		//获取标题
+		//System.out.println(doc.title());
+		return doc.toString(); 
+	}
 	
 	public static String httpGet(String url) throws IOException{
 		//获取请求连接

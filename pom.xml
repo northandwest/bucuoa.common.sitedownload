@@ -4,7 +4,9 @@
 	<groupId>bucuoa.com</groupId>
 	<artifactId>sitedownload</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	 <properties>
+	 		<jackson.version>2.2.3</jackson.version>
+	 </properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.jsoup</groupId>
@@ -45,6 +47,34 @@
 			<groupId>cn.wanghaomiao</groupId>
 			<artifactId>JsoupXpath</artifactId>
 			<version>0.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+		
+			<!-- jackson json -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.module</groupId>
+			<artifactId>jackson-module-jaxb-annotations</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
 	</dependencies>
 </project>

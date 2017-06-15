@@ -17,7 +17,7 @@ public class JsoupPost {
 	public static void main(String[] args) {
 		String cookie="JSESSIONID=963D45730F73A7DF6E477871BA10144D; _gscu_1531904469=83510898cuzj5k40; _gscs_1531904469=t83585242aie9io16|pv:4; _gscbrs_1531904469=1; Hm_lvt_cdeaf19da2aafc4215f925d58ce44a38=1483510899,1483581985,1483585242; Hm_lpvt_cdeaf19da2aafc4215f925d58ce44a38=1483586956";
 //		String url = "http://xinjinqiao.tprtc.com/admin/main/pro!lrprolist.do?date="+new Date().getTime();
-		String url ="http://xinjinqiao.tprtc.com/admin/main/pro!prodetail.do?id=1744";
+		String url ="http://xinjinqiao.tprtc.com/admin/main/flrpro.do";
 		
 		
 		Map<String, String> map = new HashMap<String, String>();
@@ -40,6 +40,7 @@ public class JsoupPost {
 		
 		try {
 			String httpPost = httpPost(url,map,cookie);
+			System.out.println(httpPost);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -11,10 +11,11 @@ public class DownLoadPage {
 
 	public static void main(String[] args) {
 		try {
-			Document doc2 = Jsoup.connect("http://beijing.xinyao.com.cn/css/index.css").userAgent("Mozilla")
+			String url = "https://bj.lianjia.com/api/headerSearch?channel=ershoufang&cityId=110000&keyword=%E7%94%B0%E5%9B%AD%E9%A3%8E%E5%85%89";
+			Document doc2 = Jsoup.connect(url).userAgent("Mozilla")
 					.cookie("auth", "token").timeout(3000).get();
-			parsarCssImgUrl(doc2);
-			System.out.println("---->ok<----");  
+//			parsarCssImgUrl(doc2);
+			System.out.println(doc2.toString()+"---->ok<----");  
 
 		} catch (IOException e) {
 			e.printStackTrace();
