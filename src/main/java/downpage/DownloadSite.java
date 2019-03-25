@@ -36,12 +36,11 @@ public class DownloadSite {
 //		System.out.println(strUtf8); 
 		tt2();
 	}
-	static String root ="d:\\temp\\jike\\index";
+	static String root ="d:\\temp\\vote\\index";
 	private static void tt2() throws IOException, MalformedURLException {
-		String url = "http://www.jikexueyuan.com/question.html";
+		String url = "http://www.omlzz.com/index.php/toupiao/h5/index?vid=08xmwqyw9pegmo9";
 
-		Document doc = Jsoup.connect(url).userAgent("Mozilla") //.header("Accept-Charset", "GBK")
-				.cookie("auth", "token").timeout(3000).get();
+		Document doc = Jsoup.connect(url).userAgent("Mozilla").timeout(3000).get();
 		
 		initdir();
 		
